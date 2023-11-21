@@ -18,11 +18,11 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav>
+  <nav id="navbar">
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <img src="./images/slack-logo.png" alt="Slack logo" id="slackLogo" />
 
-      <ul>
+      <ul id="options">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,8 +38,8 @@
       </ul>
     </div>
 
-    <div>
-      <button>
+    <div id="logos">
+      <button id="logo1">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
@@ -56,37 +56,40 @@
         </li>
       </ul>
     </div>
+
+
+
   </nav>
 
 
   <!-- HEADER -->
   <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+    <div id="header">
+      <h1 id="headerh1">Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span id="yellowPart">Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div id="buttons">
+        <button id="button1">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button id="button2">
+          <img src="./images/logo-google.png" alt="Google logo" id="googleLogo" />
+          <span id="button2text">Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div id="slackImgDiv">
+      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" id="slackImg" />
     </div>
   </header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    <section id="companies">
+      <p id="companiesP">Trusted by companies all over the world</p>
 
-      <div>
+      <div id="companylogos">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -97,61 +100,66 @@
 
     </section>
 
-    <section>
-      <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+    <section id="teams">
+      <h3 id="teamsH3">Teams large and small rely on Slack</h3>
+      <p id="teamsP">Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
-      <ul>
+      <ul id="teamsUL">
         <li>
-          <p><span>85%</span></p>
-          <p>
+          <p class="percentageContainer"><span class="percentage">85%</span></p>
+          <p class="percentageP">
             of users say Slack has improved communication
             <sup>*</sup>
           </p>
         </li>
 
         <li>
-          <p><span>86%</span></p>
-          <p>
+          <p class="percentageContainer"><span class="percentage">86%</span></p>
+          <p class="percentageP">
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
           </p>
         </li>
 
         <li>
-          <p><span>88%</span></p>
-          <p>
+          <p class="percentageContainer"><span class="percentage">88%</span></p>
+          <p class="percentageP">
             feel more connected to their teams*
             <sup>*</sup>
           </p>
         </li>
       </ul>
+      <p id="bottomP"><sup id="bottomSup">*</sup><span>Weighted average. Based on 2,707 survey responses from weekly
+          Slack users in the
+          U.S., UK,
+          Australia and Canada with a ± 2% margin of error at 95% CI (August 2020). </span></p>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
+    <section id="digitalHQ">
+      <h3 id="digitalH3">Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <button id="tryFree">Try for free</button>
+      <button id="sales">Talk to sales</button>
     </section>
 
   </main>
 
   <footer>
-    <ul>
+    <hr>
+    <ul id="footerUL">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+      <li id="changeRegion"><img src="images/icon-region.png" alt=""><span>Change Region</span></li>
+      <li id="downloadLink"> <img src="images/icon-download.png" alt=""><span>Download Slack</span></li>
     </ul>
 
-    <hr>
 
-    <ul>
+
+    <ul id="footerLinks">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -166,7 +174,7 @@
       </li>
     </ul>
 
-    <div>
+    <div id="lastText">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.

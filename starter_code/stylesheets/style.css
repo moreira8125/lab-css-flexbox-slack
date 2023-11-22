@@ -9,329 +9,634 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-body{
-    margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-
-@media (max-width: 768px) {
-    
-
-
-#navbar{
-    background-color: #540B51;
+@media screen and (max-width: 768px) {
+  #navbar {
+    background-color: #540b51;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     padding-right: 20px;
-}
+  }
 
-#slackLogo{
+  #slackLogo {
     width: 80px;
     margin-left: 27px;
-}
+  }
 
-#options{
-    display:none;
-}
+  #options {
+    display: none;
+  }
 
-#logo1{
-   margin-right: 15px; 
-}
+  #logo1 {
+    margin-right: 15px;
+  }
 
-#logos button{
+  #logos button {
     background: none;
     border: none;
-}
+  }
 
+  /* HEADER */
 
+  /* SLACK SCREENSHOT */
 
+  #slackImgDiv {
+    width: 100%;}
 
-/* HEADER */
+    #header {
+      background-color: #540b51;
+      margin-top: 0;
+      padding: 10px 10px 50px 10px;
+      color: white;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-#header{
-    background-color: #540B51;
-    margin-top: 0;
-    padding: 10px 10px 50px 10px;
-    color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    #headerh1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
 
-#headerh1{
-    font-size: 40px;
-    margin-bottom: 5px;
-}
+    #yellowPart {
+      color: #ecb12f;
+    }
 
-#yellowPart{
-    color:#ECB12F;
-}
+    #buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      width: 90%;
+    }
 
-#buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    width: 90%;
-}
+    #button1 {
+      width: 100%;
+      height: 45px;
+      border-radius: 3px;
+      border: 0;
+      font-size: 14px;
+      background-color: white;
+      color: #540b51;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-#button1{
-    width: 100%;
-    height: 45px;
-    border-radius: 3px;
-    border: 0;
-    font-size: 14px;
-    background-color: white;
-    color: #540B51;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+    #button2 {
+      width: 100%;
+      height: 45px;
+      background-color: #4285f4;
+      border: none;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+    }
 
-#button2{
-    width: 100%;
-    height: 45px;
-    background-color: #4285F4;
-    border: none;
-    border-radius: 3px;
-    display: flex;
-   align-items: center;
-}
+    #googleLogo {
+      width: 22px;
+      height: 22px;
+      background-color: white;
+      padding: 7px;
+      border-radius: 2px;
+    }
 
-#googleLogo{
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    padding: 7px;
-    border-radius: 2px;
-}
-
-#button2text{
-    margin: auto;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: white;
-}
-
-
-
-
-
-/* SLACK SCREENSHOT */
-
-#slackImgDiv{
-    width:100%;
+    #button2text {
+      margin: auto;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: white;
+    }
     overflow: hidden;
-}
+  }
 
-#slackImg{
-   width: 150%;
-}
+  #slackImg {
+    width: 150%;
+  }
 
+  /* COMPANIES */
 
-
-/* COMPANIES */
-
-#companies{
-    position:relative;
-    top:-75px;
-    background-color:#F3EAE2 ;
+  #companies {
+    position: relative;
+    top: -75px;
+    background-color: #f3eae2;
     margin-top: 20px;
     width: 100%;
     height: 250px;
-}
-    
+  }
 
-#companiesP{
+  #companiesP {
     text-align: center;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 900;
     padding-top: 40px;
-    color: #000000
-}
+    color: #000000;
+  }
 
-#companylogos{
+  #companylogos {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: space-evenly;
     margin: 20px 30px;
-}
+  }
 
-#companylogos img{
+  #companylogos img {
     height: 35px;
     padding: 20px 5px;
-}
+  }
 
+  /* TEAMS PERCENTAGE */
 
-
-/* TEAMS PERCENTAGE */
-
-#teams{
+  #teams {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+  }
 
-#teamsH3{
+  #teamsH3 {
     font-size: 30px;
     margin: auto;
     padding: 0px 40px;
-    color: #540B51;
-}
+    color: #540b51;
+  }
 
-#teamsP{
+  #teamsP {
     padding: 0px 50px;
     font-weight: 600;
     margin-top: 10px;
-}
+  }
 
-#teamsUL li{
+  #teamsUL li {
     list-style: none;
+  }
 
-}
-
-.percentage{
+  .percentage {
     font-size: 50px;
     font-weight: 600;
-    color:#540B51;
-    
-}
+    color: #540b51;
+  }
 
-.percentageP{
+  .percentageP {
     font-weight: 600;
     padding: 0 120px;
     margin-top: 0;
-}
+  }
 
-.percentageContainer{
+  .percentageContainer {
     margin-bottom: 0;
-}
+  }
 
-#bottomP{
-    color:#b0b0b0;
+  #bottomP {
+    color: #b0b0b0;
     padding: 0 10px;
     font-size: 14px;
-}
+  }
 
-#bottomSup{
+  #bottomSup {
     color: black;
     font-weight: 600;
-}
+  }
 
+  /* DIGITAL HQ */
 
-
-
-
-/* DIGITAL HQ */
-
-#digitalHQ{
-    background-color: #540B51;
+  #digitalHQ {
+    background-color: #540b51;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 80px 0 50px 0;
-    
-}
+  }
 
-#digitalH3{
+  #digitalH3 {
     text-align: center;
     font-size: 30px;
     margin: -35px 0 30px 0;
     padding: 0 40px;
     color: white;
-}
+  }
 
-#tryFree{
+  #tryFree {
     width: 90%;
     height: 45px;
     border-radius: 3px;
     border: 0;
     font-size: 14px;
     background-color: white;
-    color: #540B51;
+    color: #540b51;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 15px;
-}
+  }
 
-#sales{
+  #sales {
     width: 90%;
     height: 45px;
     border-radius: 3px;
     border: 1px solid white;
     font-size: 14px;
-    background:none;
+    background: none;
     color: white;
     text-transform: uppercase;
-    
-}
+  }
 
-#footerUL{
+  #footerUL {
     list-style: none;
     font-weight: 600;
     margin-top: 40px;
-}
-
-#footerUL li{
-    margin: 10px 0px 20px -15px;
-    font-size: 14px;
-    ;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background-color: #ccc; 
-    width: 90%;
-    margin-top: 45px; 
   }
 
-#footerLinks{
+  #footerUL li {
+    margin: 10px 0px 20px -15px;
+    font-size: 14px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    width: 90%;
+    margin-top: 45px;
+  }
+
+  #footerLinks {
     display: flex;
     list-style: none;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 20px;
     margin-top: 40px;
-    
-}
+  }
 
-#downloadLink span{
-    color:#2E71A6;
+  #downloadLink span {
+    color: #2e71a6;
     margin-left: 5px;
-}
+  }
 
-#changeRegion img{
+  #changeRegion img {
     height: 14px;
-}
+  }
 
-#changeRegion span{
+  #changeRegion span {
     margin-left: 5px;
-}
+  }
 
-
-#lastText{
+  #lastText {
     text-align: center;
     padding: 0 50px;
     margin-bottom: 25px;
     margin-top: 30px;
     font-size: 14px;
     color: #727272;
+  }
 }
 
+/*MEDIA QUERIE 1024PX*/
 
+/*HEADER*/
+body {
+  background-color: #540b51;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #navbar {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  #slackLogo {
+    width: 80px;
+    margin-left: 27px;
+  }
+
+  #options {
+    display: none;
+  }
+
+  #logo1 {
+    margin-right: 15px;
+  }
+
+  #logos button {
+    background: none;
+    border: none;
+  }
+
+  /*HEADER*/
+
+  #header {
+    background-color: #540b51;
+    margin-top: 0px;
+    padding: 0px 10px 50px 10px;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: start;
+    width: 50%;
+    background-image: url(../images/background-singup.png);
+    background-size: cover;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  #headerh1 {
+    font-size: 5em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  #yellowPart {
+    color: #ecb12f;
+  }
+
+  header p {
+    margin-left: 10px;
+  }
+
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  #button1 {
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 14px;
+    background-color: white;
+    color: #540b51;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  #button2 {
+    width: 100%;
+    height: 45px;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  #googleLogo {
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 2px;
+  }
+
+  #button2text {
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
+
+  /*IMAGE*/
+
+  #slackImgDiv{
+    
+    /*width: 50%;*/
+    
+  }
+
+  #slackImg {
+    height: 270px;
+    margin-right: -250px;
+    /*width: 50%;
+    padding-left: 700px;
+    padding-top: -600px;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    position: relative;
+    top: -500px;*/
+  }
+
+  /*COMPANIES*/
+
+  #companies {
+    position: relative;
+    top: -75px;
+    background-color: #f3eae2;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+  }
+
+  #companiesP {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 40px;
+    color: #000000;
+  }
+
+  #companylogos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 30px;
+  }
+
+  #companylogos img {
+    height: 35px;
+    padding: 20px 5px;
+  }
+
+  /*PART DON´T APPEAR*/
+
+  #teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #teamsH3 {
+    font-size: 30px;
+    margin: auto;
+    padding: 0px 40px;
+    color: #540b51;
+  }
+
+  #teamsP {
+    padding: 0px 50px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  #teamsUL li {
+    list-style: none;
+  }
+
+  .percentage {
+    font-size: 50px;
+    font-weight: 600;
+    color: #540b51;
+  }
+
+  .percentageP {
+    font-weight: 600;
+    padding: 0 120px;
+    margin-top: 0;
+  }
+
+  .percentageContainer {
+    margin-bottom: 0;
+  }
+
+  #bottomP {
+    color: #b0b0b0;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  #bottomSup {
+    color: black;
+    font-weight: 600;
+  }
+
+  /* DIGITAL HQ */
+
+  #digitalHQ {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 50px 0;
+  }
+
+  #digitalH3 {
+    text-align: center;
+    font-size: 30px;
+    margin: -35px 0 30px 0;
+    padding: 0 40px;
+    color: white;
+  }
+
+  #tryFree {
+    width: 90%;
+    height: 45px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 14px;
+    background-color: white;
+    color: #540b51;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  #sales {
+    width: 90%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid white;
+    font-size: 14px;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #footerUL {
+    list-style: none;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+
+  #footerUL li {
+    margin: 10px 0px 20px -15px;
+    font-size: 14px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    width: 90%;
+    margin-top: 45px;
+  }
+
+  #footerLinks {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  #downloadLink span {
+    color: #2e71a6;
+    margin-left: 5px;
+  }
+
+  #changeRegion img {
+    height: 14px;
+  }
+
+  #changeRegion span {
+    margin-left: 5px;
+  }
+
+  #lastText {
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #727272;
+  }
 }

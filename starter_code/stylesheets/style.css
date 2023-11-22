@@ -49,9 +49,16 @@ body {
   /* SLACK SCREENSHOT */
 
   #slackImgDiv {
-    width: 100%;}
+    width: 100%;
+    overflow: hidden;
+  }
 
-    #header {
+  #slackImg {
+    width: 150%;
+    
+  }
+  
+  #header {
       background-color: #540b51;
       margin-top: 0;
       padding: 10px 10px 50px 10px;
@@ -65,16 +72,16 @@ body {
       text-align: center;
     }
 
-    #headerh1 {
-      font-size: 40px;
-      margin-bottom: 5px;
-    }
+  #headerh1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
 
-    #yellowPart {
+  #yellowPart {
       color: #ecb12f;
     }
 
-    #buttons {
+  #buttons {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -82,7 +89,7 @@ body {
       width: 90%;
     }
 
-    #button1 {
+  #button1 {
       width: 100%;
       height: 45px;
       border-radius: 3px;
@@ -95,7 +102,7 @@ body {
       margin-bottom: 10px;
     }
 
-    #button2 {
+  #button2 {
       width: 100%;
       height: 45px;
       background-color: #4285f4;
@@ -105,7 +112,7 @@ body {
       align-items: center;
     }
 
-    #googleLogo {
+  #googleLogo {
       width: 22px;
       height: 22px;
       background-color: white;
@@ -113,19 +120,18 @@ body {
       border-radius: 2px;
     }
 
-    #button2text {
+  #button2text {
       margin: auto;
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 600;
       color: white;
     }
-    overflow: hidden;
-  }
+    
 
-  #slackImg {
-    width: 150%;
-  }
+  
+
+
 
   /* COMPANIES */
 
@@ -309,14 +315,27 @@ body {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIA QUERIE 1024PX*/
 
 /*HEADER*/
-body {
-  background-color: #540b51;
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  body{
+    width: 100%;
+  }
+
   #navbar {
     background-color: #540b51;
     display: flex;
@@ -324,13 +343,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
-    padding-right: 20px;
     padding-bottom: 25px;
     width: 100%;
   }
 
   #slackLogo {
-    width: 80px;
+    width: 100px;
     margin-left: 27px;
   }
 
@@ -345,6 +363,7 @@ body {
   #logos button {
     background: none;
     border: none;
+    padding-right: 20px;
   }
 
   /*HEADER*/
@@ -370,6 +389,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #540b51;
+    padding-bottom: 150px;
 }
 
   #headerh1 {
@@ -387,6 +408,7 @@ body {
 
   header p {
     margin-left: 10px;
+    font-size: 24px;
   }
 
   #buttons {
@@ -394,7 +416,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    width: 90%;
+    width: 100%;
     margin-left: 10px;
   }
 
@@ -440,23 +462,14 @@ body {
   /*IMAGE*/
 
   #slackImgDiv{
-    
-    /*width: 50%;*/
+    overflow: hidden;
+   
     
   }
 
   #slackImg {
-    height: 270px;
-    margin-right: -250px;
-    /*width: 50%;
-    padding-left: 700px;
-    padding-top: -600px;
-    margin-left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
-    position: relative;
-    top: -500px;*/
+    height: 320px;
+    margin-right: -230px;
   }
 
   /*COMPANIES*/
@@ -467,7 +480,7 @@ body {
     background-color: #f3eae2;
     margin-top: 20px;
     width: 100%;
-    height: 250px;
+    height: 200px;
   }
 
   #companiesP {
@@ -492,7 +505,7 @@ body {
     padding: 20px 5px;
   }
 
-  /*PART DON´T APPEAR*/
+  /*Percentage*/
 
   #teams {
     display: flex;
@@ -505,14 +518,20 @@ body {
   #teamsH3 {
     font-size: 30px;
     margin: auto;
-    padding: 0px 40px;
     color: #540b51;
+    padding-bottom: 20px;
   }
 
   #teamsP {
-    padding: 0px 50px;
     font-weight: 600;
     margin-top: 10px;
+  }
+
+
+  #teamsUL{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
   }
 
   #teamsUL li {
@@ -527,8 +546,8 @@ body {
 
   .percentageP {
     font-weight: 600;
-    padding: 0 120px;
-    margin-top: 0;
+    margin: 0 10px 55px 10px;
+    padding: 0 25px 0 25px;
   }
 
   .percentageContainer {
@@ -536,9 +555,8 @@ body {
   }
 
   #bottomP {
-    color: #b0b0b0;
-    padding: 0 10px;
-    font-size: 14px;
+    
+    display: none;
   }
 
   #bottomSup {
@@ -566,8 +584,8 @@ body {
   }
 
   #tryFree {
-    width: 90%;
-    height: 45px;
+    width: 70%;
+    height: 60px;
     border-radius: 3px;
     border: 0;
     font-size: 14px;
@@ -579,8 +597,8 @@ body {
   }
 
   #sales {
-    width: 90%;
-    height: 45px;
+    width: 70%;
+    height: 60px;
     border-radius: 3px;
     border: 1px solid white;
     font-size: 14px;
@@ -593,6 +611,9 @@ body {
     list-style: none;
     font-weight: 600;
     margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
   }
 
   #footerUL li {
@@ -611,9 +632,9 @@ body {
   #footerLinks {
     display: flex;
     list-style: none;
+    width: 35%;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
     font-size: 20px;
     margin-top: 40px;
   }
@@ -632,8 +653,8 @@ body {
   }
 
   #lastText {
-    text-align: center;
-    padding: 0 50px;
+    text-align: start;
+    padding: 0 25px;
     margin-bottom: 25px;
     margin-top: 30px;
     font-size: 14px;
